@@ -28,9 +28,11 @@ public class Pasaje {
     public void tipo(){
         if (Normal==true && Vip==false){
             System.out.println("Normal");
-        } else if (Normal==false && Vip==true) {
+        }
+    }
+    public void tipovip(){
+        if (Normal==false && Vip==true){
             System.out.println("Vip");
-
         }
     }
 }

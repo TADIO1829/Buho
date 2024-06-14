@@ -2,16 +2,16 @@
 public class Ruta extends Normal{
     boolean qg ;
     double precioqg=20;
-    double precioggvip=26;
+
     boolean qt;
     double precioqt=17.50;
-    double precioqtvip=22.75;
+
     boolean qp ;
     double precioqp=15;
-    double precioqpvip=19.5;
+
     boolean qr;
     double precioqr=17.50;
-    double precioqrvip=22.75;
+
 
     public Ruta(Boolean normal, Boolean vip, boolean qg, boolean qt, boolean qp, boolean qr) {
         super(normal, vip);
@@ -22,6 +22,70 @@ public class Ruta extends Normal{
     }
 
     public Ruta() {
+    }
+
+    public boolean isQg() {
+        return qg;
+    }
+
+    public void setQg(boolean qg) {
+        this.qg = qg;
+    }
+
+    public double getPrecioqg() {
+        return precioqg;
+    }
+
+    public void setPrecioqg(double precioqg) {
+        this.precioqg = precioqg;
+    }
+
+    public boolean isQt() {
+        return qt;
+    }
+
+    public void setQt(boolean qt) {
+        this.qt = qt;
+    }
+
+    public double getPrecioqt() {
+        return precioqt;
+    }
+
+    public void setPrecioqt(double precioqt) {
+        this.precioqt = precioqt;
+    }
+
+    public boolean isQp() {
+        return qp;
+    }
+
+    public void setQp(boolean qp) {
+        this.qp = qp;
+    }
+
+    public double getPrecioqp() {
+        return precioqp;
+    }
+
+    public void setPrecioqp(double precioqp) {
+        this.precioqp = precioqp;
+    }
+
+    public boolean isQr() {
+        return qr;
+    }
+
+    public void setQr(boolean qr) {
+        this.qr = qr;
+    }
+
+    public double getPrecioqr() {
+        return precioqr;
+    }
+
+    public void setPrecioqr(double precioqr) {
+        this.precioqr = precioqr;
     }
 
     @Override

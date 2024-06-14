@@ -1,9 +1,9 @@
-public class PasajeroNormal extends Servicio{
+public class Psajero_VIP extends ServicioVip {
     String Nombre;
     String Cedula;
 
-    public PasajeroNormal(Boolean normal, Boolean vip, boolean qg, boolean qt, boolean qp, boolean qr, String ubicacion, String asiento, boolean maletaextra, String nombre, String cedula) {
-        super(normal, vip, qg, qt, qp, qr, ubicacion, asiento, maletaextra);
+    public Psajero_VIP(Boolean normal, Boolean vip, boolean qg, boolean qt, boolean qp, boolean qr, boolean television, boolean dulces, boolean comida, boolean internet, String nombre, String cedula) {
+        super(normal, vip, qg, qt, qp, qr, television, dulces, comida, internet);
         Nombre = nombre;
         Cedula = cedula;
     }
@@ -25,8 +25,8 @@ public class PasajeroNormal extends Servicio{
     }
 
     @Override
-    public void tipo() {
-        super.tipo();
+    public void tipovip() {
+        super.tipovip();
         System.out.println("Nombre: " + Nombre);
         System.out.println("Cedula: " + Cedula);
     }

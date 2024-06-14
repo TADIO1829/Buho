@@ -13,6 +13,30 @@ public class Servicio extends Ruta {
         Maletaextra = maletaextra;
     }
 
+    public String getAsiento() {
+        return Asiento;
+    }
+
+    public void setAsiento(String asiento) {
+        Asiento = asiento;
+    }
+
+    public boolean isMaletaextra() {
+        return Maletaextra;
+    }
+
+    public void setMaletaextra(boolean maletaextra) {
+        Maletaextra = maletaextra;
+    }
+
+    public String getUbicacion() {
+        return Ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        Ubicacion = ubicacion;
+    }
+
     @Override
     public void tipo() {
         super.tipo();
