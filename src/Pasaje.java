@@ -1,49 +1,36 @@
 public class Pasaje {
-    double QG=20.0;
-    double QT=17.50;
-    double QP=15.0;
-    double QR=17.50;
-
+    Boolean Normal;
+    Boolean Vip;
 
     public Pasaje() {
     }
 
-    public double getQG() {
-        return QG;
+    public Pasaje(Boolean normal, Boolean vip) {
+        Normal = normal;
+        Vip = vip;
     }
 
-    public void setQG() {
-        this.QG = QG;
+    public Boolean getNormal() {
+        return Normal;
     }
 
-    public double getQR() {
-        return QR;
+    public void setNormal(Boolean normal) {
+        Normal = normal;
     }
 
-    public void setQR(double QR) {
-        this.QR = QR;
+    public Boolean getVip() {
+        return Vip;
     }
 
-    public double getQP() {
-        return QP;
+    public void setVip(Boolean vip) {
+        Vip = vip;
     }
+    public void tipo(){
+        if (Normal==true && Vip==false){
+            System.out.println("Normal");
+        } else if (Normal==false && Vip==true) {
+            System.out.println("Vip");
 
-    public void setQP(double QP) {
-        this.QP = QP;
-    }
-
-    public double getQT() {
-        return QT;
-    }
-
-    public void setQT(double QT) {
-        this.QT = QT;
-    }
-
-    public void mostrarPasaje() {
-        System.out.println("QG: " + QG);
-        System.out.println("QT: " + QT);
-        System.out.println("QP: " + QP);
-        System.out.println("QT: " + QT);
+        }
     }
 }
